@@ -1,0 +1,15 @@
+.jumbotron {
+  background-color: teal;
+  color: blue;
+}
+
+#header {
+  font-size: 72px;
+  font-family: fantasy;
+  text-shadow: 2px 2px 2px darkblue;
+}
+
+#sub-header {
+  font-size: 32px;
+  font-family: fantasy;
+}

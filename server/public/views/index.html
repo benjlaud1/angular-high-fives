@@ -4,13 +4,30 @@
     <meta charset="utf-8">
     <title>Angular Routing Magic!</title>
     <link rel="stylesheet" href="/styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="/styles/master.css">
     <script src="/vendor/angular.min.js" type="text/javascript"></script>
     <script src="/vendor/angular-route.min.js" type="text/javascript"></script>
     <script src="/scripts/client.js" type="text/javascript"></script>
+    <script src="/scripts/services/highFive-service.js" charset="utf-8"></script>
+    <script src="/scripts/services/randomNumber-service.js" charset="utf-8"></script>
   </head>
-  <body>
+  <body ng-app="myApp">
+    <div ng-controller="highFiveController as hfc">
+      <div class="jumbotron" style="text-align: center">
+        <h1 id="header">Push Button - Receive High Five</h1>
+        <p id="sub-header">An iteractive app build in Angular to give high fives!</p>
+      </div>
+      <div class="slap-container col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1">
+        <img class="col-md-2 col-lg-2" src="https://img.memesuper.com/44488487178b0db4d03aeb985e1a244d_meme-high-five-memesuper-internet-high-five-meme_443-450.jpeg" alt="">
+        <div class="col-md-4 ">
+          <h2>Name: Gary</h2>
+          <h4>About: Small and fluffy but always ready for a high five</h4>
+          <button ng-click="hfc.giveHighFive()" type="button" class="btn btn-success" style="font-size: 24px">Give High Five!</button>
+          <p>Gary's high five rank: <span style="font-size: 24px">{{hfc.garyHighFiveRank}}</span></p>
+          <p>You have high fived Gary <span style="font-size: 24px">{{hfc.highFiveCount}}</span> times.</p>
+        </div>
 
-
-
+      </div>
+    </div>
   </body>
 </html>
