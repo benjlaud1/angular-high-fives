@@ -1,6 +1,10 @@
 myApp.service( 'HighFives', function ( RandomNumber ) {
+  var garyCounter = 0;
+  var larryCounter = 0;
+  var barryCounter = 0;
   var counter = 0;
-  this.garyHighFiveRank = RandomNumber.getRandomNumber();
+  
+  this.HighFiveRank = RandomNumber.getRandomNumber();
 
   this.highFiveCount = function () {
     return counter;
@@ -9,7 +13,7 @@ myApp.service( 'HighFives', function ( RandomNumber ) {
   this.giveHighFive = function () {
     var thisHighFiveRank = RandomNumber.getRandomNumber();
     console.log( 'this high five:', thisHighFiveRank );
-    if ( thisHighFiveRank >= this.garyHighFiveRank ) {
+    if ( thisHighFiveRank >= this.HighFiveRank ) {
       counter++;
       return counter;
     } else {
