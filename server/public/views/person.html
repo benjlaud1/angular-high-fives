@@ -1,8 +1,8 @@
-<img class="col-md-2 col-lg-2" src="{{hfc.person.imgSource}}" alt="">
+<img class="col-md-2 col-lg-2" ng-src="{{vm.person.imgSource}}" alt="">
 <div class="col-md-4 ">
-  <h2>Name: {{hfc.person.name}}</h2>
-  <h4>About: {{hfc.person.description}}</h4> <!-- Medium and scruffy and always steals your garbage -->
-  <button ng-click="hfc.person.giveHighFive()" type="button" class="btn btn-success" style="font-size: 24px">Give High Five!</button>
-  <p>{{hfc.person.name}}'s high five rank: <span style="font-size: 24px">{{hfc.person.HighFiveRank}}</span></p>
-  <p>You have high fived {{hfc.person.name}} <span style="font-size: 24px">{{hfc.person.highFiveCount}}</span> times.</p>
+  <h2>Name: {{vm.person.name}}</h2>
+  <h4>About: {{vm.person.description}}</h4> <!-- Medium and scruffy and always steals your garbage -->
+  <button ng-click="vm.giveHighFive( vm.person.name )" type="button" class="btn btn-success" style="font-size: 24px">Give High Five!</button>
+  <p>{{vm.person.name}}'s high five rank: <span style="font-size: 24px">{{vm.person.HighFiveRank}}</span></p>
+  <p>You have high fived <span style="font-size: 24px">{{vm.highFiveCount}}</span> times.</p>
 </div>

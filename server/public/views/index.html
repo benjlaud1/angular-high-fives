@@ -8,6 +8,9 @@
     <script src="/vendor/angular.min.js" type="text/javascript"></script>
     <script src="/vendor/angular-route.min.js" type="text/javascript"></script>
     <script src="/scripts/client.js" type="text/javascript"></script>
+    <script src="/scripts/controllers/garyController.js" charset="utf-8"></script>
+    <script src="/scripts/controllers/larryController.js" charset="utf-8"></script>
+    <script src="/scripts/controllers/barryController.js" charset="utf-8"></script>
     <script src="/scripts/services/highFive-service.js" charset="utf-8"></script>
     <script src="/scripts/services/randomNumber-service.js" charset="utf-8"></script>
     <!-- <script src="public/person.html" charset="utf-8"></script> -->
@@ -17,13 +20,13 @@
     <div ng-controller="highFiveController as hfc">
       <div class="jumbotron" style="text-align: center">
         <h1 id="header">High Five Time</h1>
-        <p id="sub-header">An iteractive app build in Angular to give high fives!</p>
+        <p id="sub-header">An interactive app build in Angular to give high fives!</p>
       </div>
       <div class="slap-container col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1">
         <ul >
-          <li style="display: inline"><a href="#!/gary">Gary</a></li>
-          <li style="display: inline"><a href="#!/larry">Larry</a></li>
-          <li style="display: inline"><a href="#!/barry">Barry</a></li>
+          <li style="display: inline"><a href="/gary">Gary</a></li>
+          <li style="display: inline"><a href="/larry">Larry</a></li>
+          <li style="display: inline"><a href="/barry">Barry</a></li>
         </ul>
         <div class="high-five-view row">
           <div class="high-five-item" ng-view>
